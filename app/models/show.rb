@@ -4,11 +4,13 @@ class Show < ActiveRecord::Base
     Show.maximum("rating")
   end
 
-  def most_popular_show
+  def self.most_popular_show
     Show.order("rating DESC").first
   end
 
-  def least_popular_show
+  def 
+
+  def self.least_popular_show
     Show.order("rating ASC").first
   end
 
